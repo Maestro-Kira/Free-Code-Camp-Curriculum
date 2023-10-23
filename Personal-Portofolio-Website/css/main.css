@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins:wght@300&display=swap");
+
+/* Basic HTML */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-red: #be3144;
+  --main-white: #f0f0f0;
+  --main-black: #19181a;
+  --main-light-black-gradient: #3a3d40;
+  --intro-darkerRed: #b93042;
+  --navigation-Hover: #45567d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #292b2d;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Text-size */
+
+.text-N {
+  font-size: 1.65rem;
+}
+
+.text-M {
+  font-size: 2rem;
+}
+.text-L {
+  font-size: 3rem;
+}
+
+.text-XL {
+  font-size: 4rem;
+}
+/* Utilities  */
+
+.flex {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navigation Bar*/
+
+nav {
+  height: 70px;
+  background-color: var(--intro-darkerRed);
+  overflow: hidden;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav ul {
+  margin-right: 15px;
+}
+
+nav a {
+  padding: 25px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--main-white);
+}
+
+nav a:hover {
+  background-color: var(--navigation-Hover);
+}
+
+/* Main Introduction Section */
+
+section.introduction-section {
+  background: linear-gradient(
+    243deg,
+    var(--main-black),
+    var(--main-light-black-gradient)
+  );
+  height: 100vh;
+}
+
+section.introduction-section h1 {
+  color: var(--main-white);
+  font-family: "Pixelify Sans";
+}
+
+section.introduction-section p {
+  color: var(--intro-darkerRed);
+  font-weight: 200;
+  font-style: italic;
+}
+
+section.introduction-section {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Projects list section */
+
+.projects-section {
+  background-color: #45567d;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: calc(100% - 4.8rem);
+}
+
+.projects-section p {
+  padding: 1rem;
+  background-color: #303841;
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  font-weight: bold;
+}
+
+.project-card {
+  background-color: #303841;
+}
+
+.code {
+  color: #303841;
+  transition: color 0.3s ease-out;
+}
+
+.project-tile:hover .code {
+  color: #ff7f50;
+}
+
+.btn {
+  display: inline-block;
+  color: #f0f0f0;
+  background-color: #303841;
+  margin: 2.5rem;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  transition: transform 0.5s ease-in;
+}
+
+.btn:hover {
+  background-color: #b93042;
+}
+
+.btn:hover > i {
+  transform: translateX(2px);
+}
+
+.btn-transition > i {
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+.projects-section h2 {
+  color: var(--main-white);
+  font-family: "Pixelify Sans";
+  border-bottom: var(--main-white) 2px solid;
+  padding-top: 4rem;
+  margin: 0 auto 6rem auto;
+  max-width: 800px;
+}
+
+/* Footer */
+
+.offer {
+  text-align: center;
+  padding-top: 4.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.offer h2 {
+  font-size: 3rem;
+}
+.offer p {
+  font-style: italic;
+}
+.contacts-section {
+  background-color: #303841;
+  color: var(--main-white);
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 25px;
+  font-weight: bold;
+}
+
+.contacts a {
+  padding: 20px;
+  color: var(--main-white);
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s;
+}
+
+.contacts a:hover {
+  transform: translateY(8px);
+}
+
+.disclaimer {
+  text-align: center;
+}
+
+.disclaimer p {
+  padding: 0.65rem;
+}
+
+@media (min-width: 600px) {
+  .disclaimer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .flex {
+    justify-content: end;
+  }
+}
