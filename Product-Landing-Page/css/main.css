@@ -55,7 +55,7 @@ a {
 nav ul {
   display: flex;
   justify-content: space-around;
-  width: 35vw;
+  width: 40vw;
 }
 
 nav ul li {
@@ -256,6 +256,7 @@ footer p {
 
   main {
     margin-top: 150px;
+    width: 100%;
   }
 
   .features {
@@ -277,12 +278,17 @@ footer p {
   }
 
   .video {
-    width: 500px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .grid {
     grid-template-columns: 1fr;
     margin-left: 35px;
     margin-right: 35px;
+  }
+  footer {
+    width: 100%;
   }
 }
