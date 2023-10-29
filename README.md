@@ -19,10 +19,12 @@ You can check them out via the links down bellow:
 
 	https://coruscating-mermaid-7054d5.netlify.app
 
-5.Survey Form
+5. Survey Form
 
-	https://singular-wisp-b1b8c5.netlify.app
+	https://singular-wisp-b1b8c5.netlify.app/
 
-	Big thanks to freecodecamp, it was fun !
+
+
+Big thanks to freecodecamp, it was fun !
 
 	
