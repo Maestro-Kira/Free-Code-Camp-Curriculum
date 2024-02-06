@@ -22,6 +22,7 @@ All certification projects from freecode camp's responsive web design curriculum
 	https://singular-wisp-b1b8c5.netlify.app/
 
 
-Big thanks to freecodecamp, it was fun !
+Big thanks to freecodecamp.
+https://www.freecodecamp.org/
 
 	
