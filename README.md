@@ -1,7 +1,5 @@
 # Free-Code-Camp-Curriculum
-This repository has all certification projects from freecode camp's responsive web design curriculum built by me when I started to learn web development.
-
-You can check them out via the links down bellow:
+All certification projects from freecode camp's responsive web design curriculum.
 
 1. Product Landing Page
 
